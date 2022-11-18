@@ -60,6 +60,7 @@ GITHUB_FRIENDS_LINKS: {
     type: "volantis",  # volantis/stellar用户请在这里填写volantis
     owner: "shaoyaoqian",  # 填写你的github用户名
     repo: "blog-neighbours",  # 填写你的github仓库名
+    state: "open",  # 填写抓取的issue状态(open/closed)
 }
 
 # block site list
