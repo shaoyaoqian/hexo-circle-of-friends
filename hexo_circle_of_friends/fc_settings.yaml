@@ -22,7 +22,7 @@ LINK:
 
 # 配置项友链
 # enable：# 是否启用配置项友链 true/false（针对还未适配主题或者有定制需求的用户）
-# json_api：通过json格式配置友链，详见：https://fcircle-doc.js.cool/#/developmentdoc?id=配置项json友链
+# json_api：通过json格式配置友链，详见：https://fcircle-doc.yyyzyyyz.cn/#/developmentdoc?id=配置项json友链
 # list字段填写格式：["name", "link", "avatar","suffix"]，其中：
 #       name：必填，友链的名字
 #       link：必填，友链主页地址
@@ -61,6 +61,7 @@ GITHUB_FRIENDS_LINKS: {
     owner: "shaoyaoqian",  # 填写你的github用户名
     repo: "blog-neighbours",  # 填写你的github仓库名
     state: "open",  # 填写抓取的issue状态(open/closed)
+    label: "active",  # 填写抓取的issue标签
 }
 
 # block site list
@@ -71,6 +72,9 @@ BLOCK_SITE: [
 #    ^http://,  # http开头的全部屏蔽
 ]
 
+# 每个友链最多获取几篇文章，此值越大，则抓取的文章上限越多，相应地运行速度也会降低，反之亦然
+# 请设置一个正整数
+MAX_POSTS_NUM: 5
 
 # 启用HTTP代理，此项设为true，并且需要添加一个环境变量，名称为PROXY，值为[IP]:[端口]，比如：192.168.1.106:8080
 HTTP_PROXY: false
